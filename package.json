@@ -1,12 +1,15 @@
 {
   "name": "@lordprotector/shutdown-block-reason",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Windows shutdown block reason native addon",
   "main": "./lib/binding.js",
   "types": "./lib/binding.d.ts",
   "dependencies": {
     "bindings": "^1.5.0",
     "node-addon-api": "^8.2.2"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0"
   },
   "scripts": {
     "install": "node-gyp rebuild",
@@ -17,7 +20,6 @@
     "lib": "lib",
     "test": "test"
   },
-  "devDependencies": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/savely-krasovsky/shutdown-block-reason.git"
