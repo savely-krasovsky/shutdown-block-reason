@@ -1,6 +1,6 @@
 {
   "name": "@lordprotector/shutdown-block-reason",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Windows shutdown block reason native addon",
   "main": "./lib/binding.js",
   "types": "./lib/binding.d.ts",
