@@ -1,5 +1,5 @@
 {
-  "name": "shutdown-block-reason",
+  "name": "@savely-krasovsky/shutdown-block-reason",
   "version": "0.0.1",
   "description": "Windows shutdown block reason native addon",
   "main": "lib/binding.js",
@@ -8,7 +8,28 @@
     "node-addon-api": "^8.2.2"
   },
   "scripts": {
+    "install": "node-gyp rebuild",
     "test": "node ./test/test_binding.mjs"
   },
-  "gypfile": true
+  "gypfile": true,
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/savely-krasovsky/shutdown-block-reason.git"
+  },
+  "keywords": [
+    "win32",
+    "win-api",
+    "windows"
+  ],
+  "author": "Savely Krasovsky",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/savely-krasovsky/shutdown-block-reason/issues"
+  },
+  "homepage": "https://github.com/savely-krasovsky/shutdown-block-reason#readme"
 }
