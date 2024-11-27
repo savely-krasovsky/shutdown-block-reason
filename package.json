@@ -1,5 +1,5 @@
 {
-  "name": "@savely-krasovsky/shutdown-block-reason",
+  "name": "@lordprotector/shutdown-block-reason",
   "version": "0.0.1",
   "description": "Windows shutdown block reason native addon",
   "main": "lib/binding.js",
