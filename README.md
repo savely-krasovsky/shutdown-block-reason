@@ -1,6 +1,6 @@
 # shutdown-block-reason
 
-![NPM Version](https://img.shields.io/npm/v/shutdown-block-reason)
+[![NPM Version](https://img.shields.io/npm/v/shutdown-block-reason)](https://www.npmjs.com/package/shutdown-block-reason)
 
 Small Node native module to call `ShutdownBlockReasonCreate` and `ShutdownBlockReasonDestroy`.
 In couple with recently added `query-session-end` event it allows to prevent the Windows from shutting down
