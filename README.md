@@ -1,15 +1,25 @@
 # shutdown-block-reason
 
+![NPM Version](https://img.shields.io/npm/v/shutdown-block-reason)
+
 Small Node native module to call `ShutdownBlockReasonCreate` and `ShutdownBlockReasonDestroy`.
 In couple with recently added `query-session-end` event it allows to prevent the Windows from shutting down
 if Electron app is busy for whatever reason (unsaved work, actively doing something very important,
 app needs an extended amount of time to shut down gracefully).
 
+## Install
+
+```bash
+npm i shutdown-block-reason
+```
+
+## Usage
+
 ```ts
 import {
   create as createShutdownBlockReason,
   destroy as destroyShutdownBlockReason
-} from "@lordprotector/shutdown-block-reason"
+} from "shutdown-block-reason"
 
 (async () => {
   // create a window...
