@@ -30,7 +30,7 @@ Napi::Value Create(const Napi::CallbackInfo& info) {
     throw Napi::TypeError::New(env, "Wrong arguments");
   }
 
-  HWND hWnd = reinterpret_cast<HWND>(info[0].As<Napi::Number>().Uint32Value());
+  HWND hWnd = (HWND)UIntToPtr(info[0].As<Napi::Number>().Uint32Value());
   std::u16string u16reason = info[1].As<Napi::String>().Utf16Value();
   LPCWSTR reason = std::wstring(u16reason.begin(), u16reason.end()).c_str();
 
@@ -54,7 +54,7 @@ Napi::Value Destroy(const Napi::CallbackInfo& info) {
     throw Napi::Error::New(env, "Wrong arguments");
   }
 
-  HWND hWnd = reinterpret_cast<HWND>(info[0].As<Napi::Number>().Uint32Value());
+  HWND hWnd = (HWND)UIntToPtr(info[0].As<Napi::Number>().Uint32Value());
 
   // Perform the operation
   BOOL status = ::ShutdownBlockReasonDestroy(hWnd);
